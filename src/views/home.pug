@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    .centered
+        .cards
+            each val, index in data
+                .card
+                    h2 #{val.Country}
+                    i As of #{val.Date.split('T')[0]}
+                    .row
+                        .cases
+                            h3 Confirmed
+                            .row
+                                .new 
+                                    h4 New
+                                    .count #{val.NewConfirmed}
+                                .total 
+                                    h4 Total
+                                    .count  #{val.TotalConfirmed}
+                        .deaths
+                            h3 Deaths
+                            .row
+                                .new 
+                                    h4 New
+                                    .count  #{val.NewDeaths}
+                                .total
+                                    h4 Total
+                                    .count  #{val.TotalDeaths}
+                        .recovered
+                            h3 Recovered
+                            .row
+                                .new 
+                                    h4 New
+                                    .count  #{val.NewRecovered}
+                                .total
+                                    h4 Total
+                                    .count  #{val.TotalRecovered}
+    p Visit the  
+        a(href='/about') about page
