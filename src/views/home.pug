@@ -1,9 +1,42 @@
 extends layout
 
 block content
+    // We are adding a Global Section using the data.Global object.
     .centered
+        h2 Global
+        .centered
+            .cards.large
+                .card
+                    .row
+                        .cases
+                            .row
+                                .new 
+                                    h4 New Cases
+                                    .count #{data.Global.NewConfirmed}
+                                .total 
+                                    h4 Total Cases
+                                    .count  #{data.Global.TotalConfirmed}
+                        .deaths
+                            .row
+                                .new 
+                                    h4 New Deaths
+                                    .count  #{data.Global.NewDeaths}
+                                .total
+                                    h4 Total Deaths
+                                    .count  #{data.Global.TotalDeaths}
+                        .recovered
+                            .row
+                                .new 
+                                    h4 New Recovered
+                                    .count  #{data.Global.NewRecovered}
+                                .total
+                                    h4 Total Recovered
+                                    .count  #{data.Global.TotalRecovered}
+    .centered
+        h2 By Country
         .cards
-            each val, index in data
+            // Our Countries array is now at data.Countries.
+            each val, index in data.Countries
                 .card
                     h2 #{val.Country}
                     i As of #{val.Date.split('T')[0]}

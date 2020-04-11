@@ -5,11 +5,11 @@ const axios = require('axios');
 // Home page route.
 router.get('/', (req, res) => {
   const apiUrl = "https://api.covid19api.com/summary";
-  const countries = axios.get(apiUrl).then((response) => {
+  axios.get(apiUrl).then((response) => {
       res.render("home", {
         appName: "My COVID-19 Tracker",
         pageName: "COVID-19 Cases",
-        data: response.data.Countries,
+        data: response.data,
       });
     })
     .catch(function (err) {
