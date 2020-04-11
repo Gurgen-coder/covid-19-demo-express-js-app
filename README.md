@@ -1,9 +1,10 @@
 # My COVID-19 Tracker Demo App
 This is a simple Node.js, Express application that loads summary data from the COVID-19 API.
 
-A tutorial that walks through its creation step-by-step is available here.
+Tutorials that walk through its creation step-by-step are available here.
 
-[Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/)
+ 1. [Start Here to Make a Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/2020-04-09-start-here-to-make-a-useful-covid-19-tracker-with-node-js/)
+ 2. [Making an Even-More-Useful COVID-19 Tracker with Node.js](https://www.harveyramer.com/blog/entries/2020-04-10-making-an-even-more-useful-covid-19-tracker-with-node-js)
 
 ## Getting Started
 
