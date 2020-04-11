@@ -13,7 +13,12 @@ router.get('/', (req, res) => {
       });
     })
     .catch(function (err) {
-      return console.error(err);
+      res.render("home", {
+        appName: "My COVID-19 Tracker",
+        pageName: "COVID-19 Cases",
+        data: null,
+        error: err,
+      });
     });
 });
 
