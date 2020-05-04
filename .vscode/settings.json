@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.deploySubpath": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/7d806f61-8462-494b-9aef-985277452dd7/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/covid19tutorial"
+}
