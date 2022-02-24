@@ -10,7 +10,7 @@ Tutorials that walk through its creation step-by-step are available here.
 
 If you want to skip the tutorial and run this code:
 
-  1. clone or download the repository (`git clone git@github.com:harveyramer/covid-19-demo-express-js-app.git`)
+  1. clone or download the repository (`git clone git@github.com:Gurgen-coder/covid-19-demo-express-js-app.git`)
   2. Navigate in your terminal to the root directory (`cd covid-19-demo-express-js-app`)
   3. Check out this branch (`git checkout tutorial-2`)
   4. Install the project (`npm install`)
